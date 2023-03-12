@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-left">
+            <div class="login-header-content">
+                <h1>Welcome to Our Application</h1>
+                <p>Please login to use the platform</p>
+            </div>
+            <form action="" class="login-form">
+                <div class="login-form-content">
+                    <div class="form-item">
+                        <label for="name">Enter Name <span class="is-require">*</span></label>
+                        <input type="text" id="name">
+                        <p class="input-message">Minimum of 6 characters</p>
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Enter Email <span class="is-require">*</span></label>
+                        <input type="email" id="email">
+                        <p class="input-message">Please enter your email</p>
+                    </div>
+                    <div class="form-item">
+                        <label for="password">Enter Password <span class="is-require">*</span></label>
+                        <input type="password" id="password">
+                        <p class="input-message">Minimum of 8 characters</p>
+                    </div>
+                    <div class="form-item">
+                        <label for="dob">Enter birthday</label>
+                        <input type="date" id="dob">
+                    </div>
+                    <button class="button" type="submit">Sign In</button>
+                    <p class="form-message"></p>
+                </div>
+            </form>
+        </div>
+        <div class="login-right">
+            <img src="./image.svg" alt="">
+        </div>
+    </div>
+    <script src="./register.js"></script>
+</body>
+</html>
