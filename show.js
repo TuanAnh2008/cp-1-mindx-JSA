@@ -12,9 +12,13 @@ const h4  = document.querySelector('h4');
         h4.textContent = ''
     } else {
         btn.style.display = 'inline-block'
-        h1.textContent = `Bạn Chưa Đăng Ký Tài Khoản, tự động chuyển tới trang đăng ký sau 10 giây`
-        setTimeout(() => {
-            window.location.replace('./register.html')
-        }, 10000)
+        let s = 10
+        setInterval(() => {
+            s--
+            h1.textContent = `Bạn Chưa Đăng Ký Tài Khoản, tự động chuyển tới trang đăng ký sau ${s} giây`
+            if(s === 0) {
+                window.location.replace('./register.html')
+            }
+        }, 1000)
     }
 
